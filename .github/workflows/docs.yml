@@ -32,7 +32,7 @@ jobs:
 
       - name: Configure GitHub Pages
         if: env.DEPLOY_PAGES == 'true'
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Upload GitHub Pages artifact
         if: env.DEPLOY_PAGES == 'true'
@@ -43,4 +43,4 @@ jobs:
       - name: Deploy to GitHub Pages
         if: env.DEPLOY_PAGES == 'true'
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
